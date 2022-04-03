@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <title>Where is Jake game</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="imageholder">
+
+        <img alt="find jake" src="./image/jake.jpg">
+        <div id="glass"></div>
+
+    </div>
+
+
+
+    <script>
+        $("#imageholder").on("mousemove", function(e) {
+            var ofst = ($(window).width() - 1024) / 2;
+            $("#glass").css({
+                left: Math.round(e.pageX - 60 - ofst) + "px",
+                top: Math.round(e.pageY - 60) + "px"
+            });
+
+        });
+    </script>
+</body>
+
+</html>

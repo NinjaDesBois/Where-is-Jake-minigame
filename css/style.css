@@ -1,0 +1,106 @@
+body {
+    background: url("https://organicthemes.com/demo/retro/wp-content/themes/90s-retro/images/background.png");
+    box-sizing: border-box;
+}
+
+#imageholder {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-filter: saturate(40%) blur(2px);
+    z-index: 888;
+}
+
+#glass {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+#glass:before {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    top: 3px;
+    left: 3px;
+    content: "";
+    background-image: url(../image/jake.jpg);
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    -webkit-filter: blur(0px);
+    background-position: top center;
+    background-attachment: fixed;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    z-index: 898;
+    zoom: 1.1;
+}
+
+#glass:after {
+    position: absolute;
+    background: #000;
+    width: 120px;
+    height: 120px;
+    content: "";
+    display: block;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../image/jake.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    z-index: 889;
+    -webkit-filter: blur(1px) saturate(120%);
+}
+
+h1 a {
+    display: block;
+    color: #33ff00;
+    font-size: 4.4em;
+    font-family: 'VT323', Courier, serif;
+    font-weight: 800;
+    letter-spacing: 0px;
+    line-height: 1;
+    margin: 0px auto 0px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10vh;
+}
+
+.main-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'VT323', Courier, serif;
+    font-size: x-large;
+    margin-top: 0;
+}
+
+.start-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: #33ff00;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    color: #33ff00;
+    margin-bottom: 10%;
+}
+
+.start-play:hover {
+    box-shadow: inset 0 0 20px rgba(117, 116, 199, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(158, 132, 128, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #cfe6df;
+}
